@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.ReservaViewController">
+   <children>
+      <Label layoutX="197.0" layoutY="14.0" text="BOUTIQUE CAR " textFill="#cd1414">
+         <font>
+            <Font name="Consolas Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePickerInicio" layoutX="40.0" layoutY="59.0" />
+      <DatePicker fx:id="datePickerFin" layoutX="40.0" layoutY="101.0" />
+      <Label fx:id="lbl_FechaInicio" layoutX="232.0" layoutY="61.0" text="Pickup start">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_FechaFin" layoutX="232.0" layoutY="103.0" text="Pickup end">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cb_Cliente" layoutX="40.0" layoutY="142.0" prefHeight="25.0" prefWidth="174.0" />
+      <ChoiceBox fx:id="cb_Modelo" layoutX="40.0" layoutY="187.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="lbl_Clientes" layoutX="232.0" layoutY="144.0" text="Select client">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_Vehiculo" layoutX="232.0" layoutY="189.0" text="Category ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl_ListReservas" layoutX="14.0" layoutY="275.0" prefHeight="202.0" prefWidth="588.0">
+         <columns>
+            <TableColumn fx:id="tbc_Fecha" prefWidth="95.0" text="Fecha Reserva" />
+            <TableColumn fx:id="tbc_Cedula" prefWidth="99.0" text="Cedula Cliente" />
+            <TableColumn fx:id="tbc_Nombre" prefWidth="86.0" text="Nombre" />
+            <TableColumn fx:id="tbc_Telefono" prefWidth="79.0" text="Telefono" />
+            <TableColumn fx:id="tbc_Modelo" prefWidth="68.0" text="Vehiculo" />
+            <TableColumn fx:id="tbc_Placa" prefWidth="72.0" text="Placa" />
+            <TableColumn fx:id="tbc_Valor" prefWidth="88.0" text="Valor Reserva" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_Crear" layoutX="40.0" layoutY="227.0" mnemonicParsing="false" onAction="#crearReserva" prefHeight="25.0" prefWidth="62.0" text="Create" textFill="#19d005" />
+      <Button fx:id="btn_Eliminar" layoutX="127.0" layoutY="227.0" mnemonicParsing="false" text="Eliminate" textFill="#12c905" />
+      <Button fx:id="btn_Actualizar" layoutX="214.0" layoutY="227.0" mnemonicParsing="false" text="Update" textFill="#20da19" />
+      <Button fx:id="btn_Calcular" layoutX="301.0" layoutY="227.0" mnemonicParsing="false" text="Calculate" textFill="#1bcd15" />
+      <ImageView fitHeight="154.0" fitWidth="252.0" layoutX="405.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@DALL·E-2024-11-05-19.34.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
